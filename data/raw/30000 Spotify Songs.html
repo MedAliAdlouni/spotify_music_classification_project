@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data -->
+<html lang="en" coupert-item="9AF8D9A4E502F3784AD24272D81F0381" data-qb-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>30000 Spotify Songs</title>
+  
+    <meta name="robots" content="index, follow">
+  <meta name="description" content="Almost 30,000 Spotify songs from the Spotify API">
+    <meta name="keywords" content="music,text,data visualization,classification,nlp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC">
+  <script src="./30000 Spotify Songs_files/cb=gapi.loaded_0" nonce="" async=""></script><script nonce="" type="text/javascript">
+    window["pageRequestStartTime"] = 1732457617155;
+    window["pageRequestEndTime"] = 1732457617282;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="" id="gsi-client" src="./30000 Spotify Songs_files/client" async="" defer=""></script>
+  <script nonce="">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-fc38ca0115dafb8573e3.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin="anonymous"><link rel="preconnect" href="https://stats.g.doubleclick.net/"><link rel="preconnect" href="https://storage.googleapis.com/"><link rel="preconnect" href="https://apis.google.com/">
+    <link href="https://www.kaggle.com/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon">
+  <link rel="manifest" href="https://www.kaggle.com/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+  <link href="./30000 Spotify Songs_files/css" rel="preload" as="style">
+  <link href="./30000 Spotify Songs_files/css2" rel="preload" as="style">
+  <link href="./30000 Spotify Songs_files/css" rel="stylesheet" media="all" id="async-google-font-1">
+  <link href="./30000 Spotify Songs_files/css2" rel="stylesheet" media="all" id="async-google-font-2">
+  <script nonce="" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs">
+    <link rel="stylesheet" type="text/css" href="./30000 Spotify Songs_files/vendor.css">
+    <link rel="stylesheet" type="text/css" href="./30000 Spotify Songs_files/app.css">
+
+  
+    
+ 
+      <script nonce="">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script><style id="googleidentityservice_button_styles" nonce="">.qJTHM{-webkit-user-select:none;color:#202124;direction:ltr;-webkit-touch-callout:none;font-family:"Roboto-Regular",arial,sans-serif;-webkit-font-smoothing:antialiased;font-weight:400;margin:0;overflow:hidden;-webkit-text-size-adjust:100%}.ynRLnc{left:-9999px;position:absolute;top:-9999px}.L6cTce{display:none}.bltWBb{word-break:break-all}.hSRGPd{color:#1a73e8;cursor:pointer;font-weight:500;text-decoration:none}.Bz112c-W3lGp{height:16px;width:16px}.Bz112c-E3DyYd{height:20px;width:20px}.Bz112c-r9oPif{height:24px;width:24px}.Bz112c-uaxL4e{-webkit-border-radius:10px;border-radius:10px}.LgbsSe-Bz112c{display:block}.S9gUrf-YoZ4jf,.S9gUrf-YoZ4jf *{border:none;margin:0;padding:0}.fFW7wc-ibnC6b>.aZ2wEe>div{border-color:#4285f4}.P1ekSe-ZMv3u>div:nth-child(1){background-color:#1a73e8!important}.P1ekSe-ZMv3u>div:nth-child(2),.P1ekSe-ZMv3u>div:nth-child(3){background-image:linear-gradient(to right,rgba(255,255,255,.7),rgba(255,255,255,.7)),linear-gradient(to right,#1a73e8,#1a73e8)!important}.haAclf{display:inline-block}.nsm7Bb-HzV7m-LgbsSe{-webkit-border-radius:4px;border-radius:4px;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-transition:background-color .218s,border-color .218s;transition:background-color .218s,border-color .218s;-webkit-user-select:none;-webkit-appearance:none;background-color:#fff;background-image:none;border:1px solid #dadce0;color:#3c4043;cursor:pointer;font-family:"Google Sans",arial,sans-serif;font-size:14px;height:40px;letter-spacing:0.25px;outline:none;overflow:hidden;padding:0 12px;position:relative;text-align:center;vertical-align:middle;white-space:nowrap;width:auto}@media screen and (-ms-high-contrast:active){.nsm7Bb-HzV7m-LgbsSe{border:2px solid windowText;color:windowText}}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe{font-size:14px;height:32px;letter-spacing:0.25px;padding:0 10px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe{font-size:11px;height:20px;letter-spacing:0.3px;padding:0 8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe{padding:0;width:40px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe{width:32px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe{width:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK{-webkit-border-radius:20px;border-radius:20px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.pSzOP-SxQuSe{-webkit-border-radius:16px;border-radius:16px}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK.purZT-SxQuSe{-webkit-border-radius:10px;border-radius:10px}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc{border:none;color:#fff}.nsm7Bb-HzV7m-LgbsSe.MFS4be-v3pZbf-Ia7Qfc{background-color:#1a73e8}.nsm7Bb-HzV7m-LgbsSe.MFS4be-JaPV2b-Ia7Qfc{background-color:#202124;color:#e8eaed}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:18px;margin-right:8px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:14px;min-width:14px;width:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{height:10px;min-width:10px;width:10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin-left:8px;margin-right:-4px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:10px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:8px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c{padding:4px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:3px;border-top-left-radius:3px;-webkit-border-bottom-left-radius:3px;border-bottom-left-radius:3px;display:-webkit-box;display:-webkit-flex;display:flex;justify-content:center;-webkit-align-items:center;align-items:center;background-color:#fff;height:36px;margin-left:-10px;margin-right:12px;min-width:36px;width:36px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c,.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf .nsm7Bb-HzV7m-LgbsSe-Bz112c{margin:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:28px;margin-left:-8px;margin-right:10px;min-width:28px;width:28px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{height:16px;margin-left:-6px;margin-right:8px;min-width:16px;width:16px}.nsm7Bb-HzV7m-LgbsSe.Bz112c-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:3px;border-radius:3px;margin-left:2px;margin-right:0;padding:0}.nsm7Bb-HzV7m-LgbsSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.nsm7Bb-HzV7m-LgbsSe.pSzOP-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:14px;border-radius:14px}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:8px;border-radius:8px}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-flex-direction:row;flex-direction:row;justify-content:space-between;-webkit-flex-wrap:nowrap;flex-wrap:nowrap;height:100%;position:relative;width:100%}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX{justify-content:center}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:1;flex-grow:1;font-family:"Google Sans",arial,sans-serif;font-weight:500;overflow:hidden;text-overflow:ellipsis;vertical-align:top}.nsm7Bb-HzV7m-LgbsSe.purZT-SxQuSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-weight:300}.nsm7Bb-HzV7m-LgbsSe .oXtfBe-l4eHX .nsm7Bb-HzV7m-LgbsSe-BPrWId{-webkit-flex-grow:0;flex-grow:0}.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{-webkit-transition:background-color .218s;transition:background-color .218s;bottom:0;left:0;position:absolute;right:0;top:0}.nsm7Bb-HzV7m-LgbsSe:hover,.nsm7Bb-HzV7m-LgbsSe:focus{-webkit-box-shadow:none;box-shadow:none;border-color:#d2e3fc;outline:none}.nsm7Bb-HzV7m-LgbsSe:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.04)}.nsm7Bb-HzV7m-LgbsSe:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(66,133,244,.1)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:hover .nsm7Bb-HzV7m-LgbsSe-MJoBVe,.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:focus .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.24)}.nsm7Bb-HzV7m-LgbsSe.MFS4be-Ia7Qfc:active .nsm7Bb-HzV7m-LgbsSe-MJoBVe{background:rgba(255,255,255,.32)}.nsm7Bb-HzV7m-LgbsSe .n1UuX-DkfjY{-webkit-border-radius:50%;border-radius:50%;display:-webkit-box;display:-webkit-flex;display:flex;height:20px;margin-left:-4px;margin-right:8px;min-width:20px;width:20px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId{font-family:"Roboto";font-size:12px;text-align:left}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .ssJRIf,.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .fmcmS{overflow:hidden;text-overflow:ellipsis}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#5f6368;fill:#5f6368;font-size:11px;font-weight:400}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.MFS4be-Ia7Qfc .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff{color:#e8eaed;fill:#e8eaed}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-BPrWId .K4efff .Bz112c{height:18px;margin:-3px -3px -3px 2px;min-width:18px;width:18px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-top-left-radius:0;border-top-left-radius:0;-webkit-border-bottom-left-radius:0;border-bottom-left-radius:0;-webkit-border-top-right-radius:3px;border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;border-bottom-right-radius:3px;margin-left:12px;margin-right:-10px}.nsm7Bb-HzV7m-LgbsSe.jVeSEe.JGcpL-RbRzK .nsm7Bb-HzV7m-LgbsSe-Bz112c-haAclf{-webkit-border-radius:18px;border-radius:18px}.L5Fo6c-sM5MNb{border:0;display:block;left:0;position:relative;top:0}.L5Fo6c-bF1uUb{-webkit-border-radius:4px;border-radius:4px;bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0}.L5Fo6c-bF1uUb:focus{border:none;outline:none}sentinel{}</style><style></style>
+    <script nonce="">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="" async="" src="./30000 Spotify Songs_files/js"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs">
+    <meta property="og:title" content="30000 Spotify Songs">
+    <meta property="og:description" content="Almost 30,000 Spotify songs from the Spotify API">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/3938173/6851327/d88476f38409227964d46de6aedb72f2/dataset-card.png?t=2023-11-01-06-03-48">
+    <meta property="fb:app_id" content="2665027677054710">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@kaggledatasets">
+        <meta name="twitter:creator" content="@joakimarvidsson">
+
+
+  <meta name="twitter:site" content="@Kaggle"> 
+  
+    
+            <script nonce="" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"30000 Spotify Songs","description":"Almost 30,000 Songs from the Spotify API. See the readme file for a formatted data dictionary table.\n\n\n**Data Dictionary:**\n\n| variable| class| description |\n|:--------|:-----|:------------|\n|track_id                 |character | Song unique ID|\n|track_name               |character | Song Name|\n|track_artist             |character | Song Artist|\n|track_popularity         |double    | Song Popularity (0-100) where higher is better |\n|track_album_id           |character | Album unique ID|\n|track_album_name         |character | Song album name |\n|track_album_release_date |character | Date when album released |\n|playlist_name            |character | Name of playlist |\n|playlist_id              |character | Playlist ID|\n|playlist_genre           |character | Playlist genre |\n|playlist_subgenre        |character | Playlist subgenre|\n|danceability             |double    | Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable. |\n|energy                   |double    | Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy. |\n|key                      |double    | The estimated overall key of the track. Integers map to pitches using standard Pitch Class notation . E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1. |\n|loudness                 |double    | The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.|\n|mode                     |double    | Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.|\n|speechiness              |double    | Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks. |\n|acousticness             |double    | A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.|\n|instrumentalness         |double    | Predicts whether a track contains no vocals. \"Ooh\" and \"aah\" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly \"vocal\". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0. |\n|liveness                 |double    | Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live. |\n|valence                  |double    | A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). |\n|tempo                    |double    | The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration. |\n|duration_ms              |double    | Duration of song in milliseconds |\n","url":"https://www.kaggle.com/joebeachcapital/30000-spotify-songs","version":2,"keywords":["subject, arts and entertainment, music","data type, text","technique, data visualization","task, classification","analysis, nlp"],"license":{"@type":"CreativeWork","name":"Database: Open Database, Contents: Database Contents","url":"http://opendatacommons.org/licenses/dbcl/1.0/"},"identifier":["3938173"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Joakim Arvidsson","url":"https://www.kaggle.com/joebeachcapital","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2003977-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/download?datasetVersionNumber=2","contentSize":"3155689 bytes"}],"commentCount":4,"dateModified":"2023-11-01T06:06:43.463Z","discussionUrl":"https://www.kaggle.com/joebeachcapital/30000-spotify-songs/discussion","alternateName":"Almost 30,000 Spotify songs from the Spotify API","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/3938173/6851327/d88476f38409227964d46de6aedb72f2/dataset-card.png?t=2023-11-01-06-03-48","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":4},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":21150},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":115662},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":335}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="" src="./30000 Spotify Songs_files/api.js.download" defer="" async="" gapi_processed="true"></script>
+  <script nonce="" src="./30000 Spotify Songs_files/runtime.js.download"></script>
+  <script nonce="" src="./30000 Spotify Songs_files/vendor.js.download"></script>
+  <script nonce="" src="./30000 Spotify Songs_files/app.js.download"></script><style id="_goober"> .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}</style>
+    <script nonce="" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '19109213'
+      }
+    </script>
+<script type="text/javascript" src="./30000 Spotify Songs_files/MathJax.js.download"></script><style data-styled="active" data-styled-version="6.1.13"></style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><link rel="stylesheet" type="text/css" href="./30000 Spotify Songs_files/4787.f5129f48620a03126642.css"><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css-global" data-s=""></style><style data-emotion="css" data-s=""></style><script src="./30000 Spotify Songs_files/loader.js.download" data-loaded="1"></script><script type="text/javascript" charset="UTF-8" nonce="" src="./30000 Spotify Songs_files/loader(1).js.download"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="./30000 Spotify Songs_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./30000 Spotify Songs_files/util.css"><link id="load-css-2" rel="stylesheet" type="text/css" href="./30000 Spotify Songs_files/controls.css"><script type="text/javascript" charset="UTF-8" src="./30000 Spotify Songs_files/jsapi_compiled_default_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./30000 Spotify Songs_files/jsapi_compiled_graphics_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./30000 Spotify Songs_files/jsapi_compiled_ui_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./30000 Spotify Songs_files/jsapi_compiled_corechart_module.js.download" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./30000 Spotify Songs_files/jsapi_compiled_controls_module.js.download" nonce=""></script></head>
+<body style="background-color: rgb(255, 255, 255);"><div id="MathJax_Message" style="display: none;"></div>
+<main>
+    
+
+
+
+
+
+<div id="site-container"><div class="" style="height: inherit; --mdc-theme-on-primary: #FFFFFF; --mdc-theme-on-surface: rgba(0, 0, 0, 0.87); --mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87); --mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54); --mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38); --mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38); --mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38); --mdc-theme-primary: #20BEFF; --mdc-theme-error: #CC450D; --mdc-theme-background: #F8F9FA; --mdc-theme-surface: #FFFFFF; --mdc-theme-primary-bg: #20BEFF; --mdc-theme-secondary-bg: #9AA0A6;"><div id="rmwcPortal"><div class="mdc-menu sc-dgjgUn eRloWS sc-eSclpK bZDtbb mdc-menu-surface mdc-menu-surface--is-open-below" aria-hidden="true" style="transform-origin: center top; left: 0px; top: 123px; max-height: 540px;"><ul role="menu" class="mdc-list mdc-menu__items mdc-list"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">code</span><p class="sc-gQaihK bwaGMg">New Notebook</p></div></li><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">table_chart</span><p class="sc-gQaihK bwaGMg">New Dataset</p></div></li><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">tenancy</span><p class="sc-gQaihK bwaGMg">New Model</p></div></li><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">emoji_events</span><p class="sc-gQaihK bwaGMg">New Competition</p></div></li><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">corporate_fare</span><p class="sc-gQaihK bwaGMg">New Organization</p></div></li></ul></div><div class="mdc-menu sc-dgjgUn gKMPkV mdc-menu-surface" aria-hidden="true"><ul role="menu" class="mdc-list mdc-menu__items mdc-list"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">call_split</span><p class="sc-gQaihK bwaGMg">Copy and Edit</p></div></li><a href="https://www.kaggle.com/kernels/scriptcontent/189509429/download" download="" class="sc-hqkeCX hIVzxm"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">cloud_download</span><p class="sc-gQaihK bwaGMg">Download</p></div></li></a><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">create_new_folder</span><p class="sc-gQaihK bwaGMg">Add to Collection</p></div></li><li class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters sc-hsfCcR fXAZAI css-tisqa1" tabindex="0" role="menuitem"><div class="sc-gQkENW hyybuT"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-CNKsk hQRRjA css-1jgtvd5" aria-hidden="true">bookmark_border</span><p class="sc-gQaihK sc-cqgMZH bwaGMg hQJngS">Bookmark</p></div><span class="MuiTouchRipple-root css-w0pj6f"></span></li></ul></div><div class="mdc-menu sc-dgjgUn gKMPkV mdc-menu-surface" aria-hidden="true"><ul role="menu" class="mdc-list mdc-menu__items mdc-list"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">call_split</span><p class="sc-gQaihK bwaGMg">Copy and Edit</p></div></li><a href="https://www.kaggle.com/kernels/scriptcontent/154625540/download" download="" class="sc-hqkeCX hIVzxm"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">cloud_download</span><p class="sc-gQaihK bwaGMg">Download</p></div></li></a><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">create_new_folder</span><p class="sc-gQaihK bwaGMg">Add to Collection</p></div></li><li class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters sc-hsfCcR fXAZAI css-tisqa1" tabindex="0" role="menuitem"><div class="sc-gQkENW hyybuT"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-CNKsk hQRRjA css-1jgtvd5" aria-hidden="true">bookmark_border</span><p class="sc-gQaihK sc-cqgMZH bwaGMg hQJngS">Bookmark</p></div><span class="MuiTouchRipple-root css-w0pj6f"></span></li></ul></div><div class="mdc-menu sc-dgjgUn gKMPkV mdc-menu-surface" aria-hidden="true"><ul role="menu" class="mdc-list mdc-menu__items mdc-list"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">call_split</span><p class="sc-gQaihK bwaGMg">Copy and Edit</p></div></li><a href="https://www.kaggle.com/kernels/scriptcontent/173679089/download" download="" class="sc-hqkeCX hIVzxm"><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">cloud_download</span><p class="sc-gQaihK bwaGMg">Download</p></div></li></a><li tabindex="0" role="menuitem" class="mdc-ripple-upgraded sc-hPGoDJ dYAjyE mdc-list-item"><div class="mdc-list-item__ripple mdc-ripple-upgraded"></div><div class="sc-dHMlHb ehpExK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-kBpWFy boOyrD css-1jgtvd5" aria-hidden="true">create_new_folder</span><p class="sc-gQaihK bwaGMg">Add to Collection</p></div></li><li class="MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters sc-hsfCcR fXAZAI css-tisqa1" tabindex="0" role="menuitem"><div class="sc-gQkENW hyybuT"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-CNKsk hQRRjA css-1jgtvd5" aria-hidden="true">bookmark_border</span><p class="sc-gQaihK sc-cqgMZH bwaGMg hQJngS">Bookmark</p></div><span class="MuiTouchRipple-root css-w0pj6f"></span></li></ul></div></div><div id="kaggle-portal-root-global"></div><div class="sc-cpjgyG lgAThj"><div class="sc-fJAEDJ dttsMW"><div class="sc-ibMKnd jDKeCE"><div class="sc-kNwsoS ijPveI"><button aria-label="menu" class="sc-cwJYja kWGtZT google-symbols notranslate">menu</button></div><a href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#site-content" class="sc-dFULME knOGbj">Skip to<br>content</a><div class="sc-dTSHqv rkCCa"><a href="https://www.kaggle.com/" aria-label="Return to Kaggle home page"><img src="./30000 Spotify Songs_files/site-logo.svg" alt="Kaggle" class="sc-cUnzlc gMphwK"></a></div></div></div><div class="sc-cNfTXI bmszvP"><div class="mdc-menu-surface--anchor"><button data-menutarget="true" class="sc-StzaE fCMSbu"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink: 0;"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 30L20 16L16 20L16 30L20 30Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M20 20L30 20L30 16L20 16L20 20Z" fill="#20BEFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 20L20 16L15.937 16L6 16L6 20L16 20Z" fill="#20BEFF"></path><rect x="20" y="16" width="4" height="10" transform="rotate(-180 20 16)" fill="#20BEFF"></rect></svg><span class="sc-dprtRQ sc-folxBd lkjLvm kEOcuL">Create</span></button><div></div></div></div><div class="sc-eouHMD biQuIC"><div class="sc-brZXgC eVJPJj"><div class="sc-dGJTGW gnVNmX"><div class="sc-MAtXD jOdXyC"><div class="sc-cWJKYG eJXglL"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-jWfcXB amzyD css-feqhe6" aria-invalid="false"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart css-omz4rr"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true" style="margin-right: 8px;">search</span><input aria-invalid="false" autocomplete="off" id=":r4:" placeholder="Search" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-r1vfnz" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-ihdtdm"><span class="notranslate">​</span></legend></fieldset></div></div></div></div><ul class="MuiList-root km-list css-1uzmcsd" role="list"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Home List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Home" tabindex="0" href="https://www.kaggle.com/" data-click-log-id="home" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Home" aria-label="Home">explore</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Home</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Competitions List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Competitions" tabindex="0" href="https://www.kaggle.com/competitions" data-click-log-id="competitions" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Competitions" aria-label="Competitions">emoji_events</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Competitions</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Datasets List Item"><div class="sc-kLJHhQ gXNEdi sc-fbPQyc jgMmIZ km-listitem--small"><a aria-current="page" aria-label="Datasets" tabindex="0" href="https://www.kaggle.com/datasets" data-click-log-id="datasets" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Datasets" aria-label="Datasets">table_chart</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl tvNbw" style="padding-left: 4px;">Datasets</p><div class="sc-jnUjQj kGLBje"></div></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Models List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Models" tabindex="0" href="https://www.kaggle.com/models" data-click-log-id="models" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Models" aria-label="Models">tenancy</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Models</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Code List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Code" tabindex="0" href="https://www.kaggle.com/code" data-click-log-id="code" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Code" aria-label="Code">code</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Code</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Discussions List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Discussions" tabindex="0" href="https://www.kaggle.com/discussions" data-click-log-id="discussions" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Discussions" aria-label="Discussions">comment</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Discussions</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Kaggle Learn List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Kaggle Learn" tabindex="0" href="https://www.kaggle.com/learn" data-click-log-id="learn" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Learn" aria-label="Learn">school</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Learn</p></div></div></a></div></li></ul><ul class="MuiList-root km-list css-1uzmcsd" role="list"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="More on Kaggle List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-current="false" aria-expanded="false" aria-label="More on Kaggle" tabindex="0" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#" data-click-log-id="more" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="More" aria-label="More">expand_more</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">More</p></div></div></a></div></li></ul></div><div><div class="sc-hGNhLO jfpyxJ sc-flDReH jdskzo"></div><ul style="padding-bottom: 36px;"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Your Work List Item"><div class="sc-kLJHhQ jFmbcA sc-fbPQyc jgMmIZ km-listitem--small"><a aria-label="Your Work" tabindex="0" href="https://www.kaggle.com/work" data-click-log-id="your-work" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-chGqOJ jjkgJt css-1jgtvd5" aria-hidden="true" title="Your Work" aria-label="Your Work">note_alt</span></div></div><div class="sc-eauhAA sc-fXwCOG hnTMYu kxsDvJ"><p class="sc-fFoeYl klcIsD" style="padding-left: 4px;">Your Work</p></div></div></a></div></li><li><button aria-label="Collapse Viewed" class="sc-leMUev emvqxz"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_down</span><span class="sc-bMTdWJ sc-gWijiA bRTSBd kUpZug">Viewed</span></button><ul class="MuiList-root km-list sc-cJAKoS bsRDBx css-1uzmcsd" role="list"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="30000 Spotify Songs List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="30000 Spotify Songs" tabindex="0" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/dataset-thumbnail.png" alt="" width="20" height="20" class="sc-dKpdpM jFpQiL"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">30000 Spotify Songs</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="📌 [Spotify Songs] | Music Genre Predictor: PART I List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="📌 [Spotify Songs] | Music Genre Predictor: PART I" tabindex="0" href="https://www.kaggle.com/code/jgabrielsb/spotify-songs-music-genre-predictor-part-i" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/8367463-kg.jpeg" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">📌 [Spotify Songs] | Music Genre Predictor: PART I</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="ECG Classification | CNN LSTM Attention Mechanism List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="ECG Classification | CNN LSTM Attention Mechanism" tabindex="0" href="https://www.kaggle.com/code/polomarco/ecg-classification-cnn-lstm-attention-mechanism" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/default-thumb.png" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">ECG Classification | CNN LSTM Attention Mechanism</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Arrhythmia on ECG Classification using CNN  List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="Arrhythmia on ECG Classification using CNN " tabindex="0" href="https://www.kaggle.com/code/gregoiredc/arrhythmia-on-ecg-classification-using-cnn" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/2082360-kg.jpeg" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">Arrhythmia on ECG Classification using CNN </p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="A Guide on XGBoost hyperparameters tuning List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="A Guide on XGBoost hyperparameters tuning" tabindex="0" href="https://www.kaggle.com/code/prashant111/a-guide-on-xgboost-hyperparameters-tuning" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/1920818-kg.JPG" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">A Guide on XGBoost hyperparameters tuning</p></div></div></a></div></li></ul></li><li><button aria-label="Collapse Edited" class="sc-leMUev emvqxz"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_down</span><span class="sc-bMTdWJ sc-gWijiA bRTSBd kUpZug">Edited</span></button><ul class="MuiList-root km-list sc-cJAKoS bsRDBx css-1uzmcsd" role="list"><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="ECG Classification | CNN LSTM Attention mec bb6f4c List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="ECG Classification | CNN LSTM Attention mec bb6f4c" tabindex="0" href="https://www.kaggle.com/code/mohammedalieladlouni/ecg-classification-cnn-lstm-attention-mec-bb6f4c" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/default-thumb.png" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">ECG Classification | CNN LSTM Attention mec bb6f4c</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="ECG Classification | CNN LSTM Attention mechanism List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="ECG Classification | CNN LSTM Attention mechanism" tabindex="0" href="https://www.kaggle.com/code/mohammedalieladlouni/ecg-classification-cnn-lstm-attention-mechanism" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/default-thumb.png" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">ECG Classification | CNN LSTM Attention mechanism</p></div></div></a></div></li><li class="MuiListItem-root MuiListItem-gutters sc-hSyjfr kIELZy css-22wag7" aria-label="Dive into dplyr (tutorial #1) List Item"><div class="sc-kLJHhQ jFmbcA sc-ebYJzh bxXrXe km-listitem--dense"><a aria-label="Dive into dplyr (tutorial #1)" tabindex="0" href="https://www.kaggle.com/code/mohammedalieladlouni/dive-into-dplyr-tutorial-1" role="link" class="sc-lgprfV ZGfSk"><div class="sc-dSfWjt fuVqEz"><div class="sc-gohMHu bmqSpc"><div class="sc-kJZLhT jvoaUf"><img src="./30000 Spotify Songs_files/default-thumb.png" alt="" width="20" height="20" class="sc-dKpdpM cQjffb"></div></div><div class="sc-eauhAA sc-fXwCOG fWzCXp kxsDvJ"><p class="sc-gQaihK sc-gGJNVN iUbclf gYuPkj">Dive into dplyr (tutorial #1)</p></div></div></a></div></li></ul></li><li></li></ul></div></div><div class="sc-iBcgGl kMOmKe"><button class="sc-ijdjGn gwBxxK"><div class="sc-jMptMn eDfxnD"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jMWFfh notranslate sc-iyfFpA hPUfF css-1jgtvd5" aria-hidden="true" aria-label="Open Active Events dialog">auto_awesome_motion</span></div><p class="sc-fFoeYl sc-dmKJsK klcIsD jzmtBH">View Active Events</p></button></div></div></div><div class="sc-bZABGC bKbkoD"><div class="sc-eMIsOp efJvPm"><div class="sc-ibMKnd jDKeCE"><div class="sc-kNwsoS ijPveI"><button aria-label="menu" class="sc-cwJYja kWGtZT google-symbols notranslate">menu</button></div><a href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#site-content" class="sc-dFULME knOGbj">Skip to<br>content</a><div class="sc-dTSHqv rkCCa"><a href="https://www.kaggle.com/" aria-label="Return to Kaggle home page"><img src="./30000 Spotify Songs_files/site-logo.svg" alt="Kaggle" class="sc-cUnzlc gMphwK"></a></div></div></div><div class="sc-fJRCgt iejBuA"><div class="sc-hqKjEI bcetYm"><div class="sc-cWJKYG eJXglL"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-jWfcXB amzyD css-feqhe6" aria-invalid="false"><div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedStart css-omz4rr"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true" style="margin-right: 8px;">search</span><input aria-invalid="false" autocomplete="off" id=":r5:" placeholder="Search" type="text" class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-r1vfnz" value=""><fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac"><legend class="css-ihdtdm"><span class="notranslate">​</span></legend></fieldset></div></div></div></div><div class="sc-sHUin bMxswi"><div class="sc-byRyzU eppfOO"><div class="sc-dRlUCX jnpRUO"><div class="sc-ZVgAE dYXXfa"><div class="sc-kvmDxl iCJueE"></div><div class="sc-fDeYYK gUohLu sc-kUiVwB fGsGmP" aria-label="mohammed ali el adlouni" role="button" tabindex="0"><div data-testid="avatar-image" title="mohammed ali el adlouni" class="sc-jYWXzj bZGAAV" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 30.265847744427305 11.36474508437579 A 15 15 0 0 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(31, 166, 65);"></path></svg></div></div></div></div></div></div></div><div id="site-content" class="sc-eKaMrT caySiR legacy-less-light-theme"><div class="sc-jmqcPp ygsfm"></div><div><div class="sc-gSJmla lmoIYC"><div id="kaggle-portal-root-right-rail"></div><div data-testid="dataset-detail-render-tid" class="sc-ivxoEo cZoCRA"><div class="sc-ghWlax dPCUIa"><div height="1px" class="sc-hFhrMi uzNiv"></div><div class="sc-bkkqAR kuPnug"><div class="sc-hyNBQI hIPWzr"><a href="https://www.kaggle.com/joebeachcapital" aria-label="Joakim Arvidsson" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="Joakim Arvidsson" class="sc-jYWXzj bZGAAV" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/2003977-kg.jpg&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(250, 224, 65);"></circle></svg></a><span style="flex: 1 1 0%; margin-left: 16px;"><span><span class="sc-bMTdWJ bRTSBd">Joakim Arvidsson </span></span><span class="sc-bMTdWJ bRTSBd"> · Updated <span class="sc-hxvJOb mBQIT" title="Wed Nov 01 2023 07:06:43 GMT+0100 (Central European Standard Time)" aria-label="a year ago">a year ago</span></span></span></div><div wrap="hide" class="sc-jSSkKI ljaBxO sc-bgIvgZ gDNVol"><div class="sc-iqyJx ctNDHg"><h1 class="sc-jwIPbr sc-eDHQDy ojfEn kUmpWI">30000 Spotify Songs</h1><span class="sc-dprtRQ sc-giBObj iNVFzN iRQRkE" style="margin-bottom: 0px; max-width: none;">Almost 30,000 Spotify songs from the Spotify API</span></div><div wrap="hide" class="sc-fufdwm cDwVht" style="align-self: unset;"><img src="./30000 Spotify Songs_files/dataset-cover.png" alt="" class="sc-kwETSx ezitHS"></div></div></div><div height="1px" class="sc-hFhrMi uzNiv"></div><div class="sc-kYSpg bReuqU"><div class="sc-bkkqAR kuPnug"><div class="sc-dSdNMP diwyXG"><div class="sc-bQOlwi eysJnC"><div class="sc-hOwhjp NNlCj"><h2 class="sc-cEzcPc sc-fNgESI JcWBt jVaASD">30000 Spotify Songs</h2><div class="sc-jRhXTL hMLPST"><div class="sc-gBEsyE dkrOAE"><div class="sc-cVKgyc HVBOs"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO cMNmkb jVFlLx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><button mode="default" aria-label="335 votes" aria-live="polite" class="sc-fwHUOm sc-kRsKUn cMNmkb fEroZi">335</button></div><button class="sc-edmcci cZPfSb sc-cUUEuL eBitgC" tabindex="0" role="button"><span class="sc-hJRrWL iwZBhE">New Notebook</span></button><div><button class="sc-edmcci dCGaLQ sc-cUUEuL eBitgC" tabindex="0" role="button"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS ivHFq notranslate css-1jgtvd5" aria-hidden="true">file_download</span><span class="sc-hJRrWL iwZBhE">Download</span></button></div><img role="presentation" alt="" src="./30000 Spotify Songs_files/goldl@2x.png" class="sc-jzlOV dzSRZD"><div><button aria-label="More options for this dataset" title="More options for this dataset" class="sc-cwJYja kWGtZT google-symbols notranslate">more_vert</button></div></div></div></div></div><div class="sc-gAmAvX ebOqye"><div class="MuiTabs-root sc-cRxlba jhxhZu sc-eyWYfq bvemHa css-pc1mzd"><div class="MuiTabs-scrollableX MuiTabs-hideScrollbar css-oqr85h" style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"></div><div class="MuiTabs-scroller MuiTabs-hideScrollbar MuiTabs-scrollableX css-12qnib" style="margin-bottom: 0px;"><div class="MuiTabs-flexContainer css-k008qs" role="tablist"><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected sc-fNRVHb esCxNM css-i5k1e3" tabindex="0" role="tab" aria-selected="true" aria-label="Data Card, 1 of 4" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data"><span class="sc-dprtRQ cvNUvq">Data Card</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary sc-fNRVHb esCxNM css-i5k1e3" tabindex="-1" role="tab" aria-selected="false" aria-label="Code (65), 2 of 4" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/code"><span class="sc-dprtRQ iNVFzN">Code (65)</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary sc-fNRVHb esCxNM css-i5k1e3" tabindex="-1" role="tab" aria-selected="false" aria-label="Discussion (4), 3 of 4" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/discussion"><span class="sc-dprtRQ iNVFzN">Discussion (4)</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a><a class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary sc-fNRVHb esCxNM css-i5k1e3" tabindex="-1" role="tab" aria-selected="false" aria-label="Suggestions (0), 4 of 4" href="https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/suggestions"><span class="sc-dprtRQ iNVFzN">Suggestions (0)</span><span class="MuiTouchRipple-root css-w0pj6f"></span></a></div><span class="MuiTabs-indicator css-zn1p7a" style="left: 0px; width: 75.5625px;"></span></div></div></div></div></div><div class="sc-hGNhLO ccTMQm sc-hRgSog xzHnH sc-jCNgzU kJzazC"></div></div> <div class="sc-heANvy blqbAt"><div class="sc-ePCmCd eyZriD"><div class="sc-brGJce eNLaZk"><div class="sc-ddGHkk soffp sc-ekrnMf gchvOx"><div class="sc-hzyFKJ eHKwxF"><div class="sc-zlfrG jLFdhj"><h2 class="sc-cHqXqK sc-cgxxSg bTsuQr hdHryl">About Dataset</h2></div></div></div><div class="sc-gDrrVb eKdkhN"><div class="sc-hHjGFP itsPrz"><div style="min-height: 80px;"><div class="sc-ePpfBx hvYpEH sc-gHYiue dVtIvE"><p>Almost 30,000 Songs from the Spotify API. See the readme file for a formatted data dictionary table.</p>
+<p><strong>Data Dictionary:</strong></p>
+<table>
+<thead>
+<tr>
+<th>variable</th>
+<th>class</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>track_id</td>
+<td>character</td>
+<td>Song unique ID</td>
+</tr>
+<tr>
+<td>track_name</td>
+<td>character</td>
+<td>Song Name</td>
+</tr>
+<tr>
+<td>track_artist</td>
+<td>character</td>
+<td>Song Artist</td>
+</tr>
+<tr>
+<td>track_popularity</td>
+<td>double</td>
+<td>Song Popularity (0-100) where higher is better</td>
+</tr>
+<tr>
+<td>track_album_id</td>
+<td>character</td>
+<td>Album unique ID</td>
+</tr>
+<tr>
+<td>track_album_name</td>
+<td>character</td>
+<td>Song album name</td>
+</tr>
+<tr>
+<td>track_album_release_date</td>
+<td>character</td>
+<td>Date when album released</td>
+</tr>
+<tr>
+<td>playlist_name</td>
+<td>character</td>
+<td>Name of playlist</td>
+</tr>
+<tr>
+<td>playlist_id</td>
+<td>character</td>
+<td>Playlist ID</td>
+</tr>
+<tr>
+<td>playlist_genre</td>
+<td>character</td>
+<td>Playlist genre</td>
+</tr>
+<tr>
+<td>playlist_subgenre</td>
+<td>character</td>
+<td>Playlist subgenre</td>
+</tr>
+<tr>
+<td>danceability</td>
+<td>double</td>
+<td>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</td>
+</tr>
+<tr>
+<td>energy</td>
+<td>double</td>
+<td>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>double</td>
+<td>The estimated overall key of the track. Integers map to pitches using standard Pitch Class notation . E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1.</td>
+</tr>
+<tr>
+<td>loudness</td>
+<td>double</td>
+<td>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>double</td>
+<td>Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.</td>
+</tr>
+<tr>
+<td>speechiness</td>
+<td>double</td>
+<td>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</td>
+</tr>
+<tr>
+<td>acousticness</td>
+<td>double</td>
+<td>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</td>
+</tr>
+<tr>
+<td>instrumentalness</td>
+<td>double</td>
+<td>Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.</td>
+</tr>
+<tr>
+<td>liveness</td>
+<td>double</td>
+<td>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</td>
+</tr>
+<tr>
+<td>valence</td>
+<td>double</td>
+<td>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</td>
+</tr>
+<tr>
+<td>tempo</td>
+<td>double</td>
+<td>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.</td>
+</tr>
+<tr>
+<td>duration_ms</td>
+<td>double</td>
+<td>Duration of song in milliseconds</td>
+</tr>
+</tbody>
+</table></div></div></div><button tabindex="0" role="button" class="sc-edmcci eVbxJR" style="margin: 24px 0px 8px;"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">expand_less</span><span class="sc-hJRrWL iwZBhE">View less</span></button></div></div><div class="sc-kAveIo cQWhtw"><div class="sc-eYnGuh iJgVtv"><h2 class="sc-eOzmre iyFMKB">Usability</h2><div role="tooltip"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS lnQVSy notranslate css-1jgtvd5" aria-hidden="false" title="Hit enter to view usability metrics" aria-label="Hit enter to view usability metrics" role="button" tabindex="0" style="margin-left: 8px;">info</span></div></div><p class="sc-gQaihK iUbclf" style="margin-top: 4px;"><span data-testid="usability-value">10.00</span></p><h2 class="sc-eOzmre iyFMKB" style="margin-top: 24px;">License</h2><p class="sc-gQaihK sc-dNAACI iUbclf cxEtLP"><a class="sc-uYFMi foIisu sc-hpfyUy eHSKfU" emphasis="low" rel="noopener noreferrer" href="http://opendatacommons.org/licenses/dbcl/1.0/" target="_blank">Database: Open Database, Contents: Database Contents</a></p><h2 class="sc-eOzmre iyFMKB" style="margin-top: 24px;">Expected update frequency</h2><p class="sc-gQaihK sc-dNAACI iUbclf cxEtLP">Never</p><h2 class="sc-eOzmre iyFMKB" style="margin-top: 24px;">Tags</h2><div class="sc-cqShnP jbuEhq"><div class="sc-dQqOqs erJSfl"><div class="sc-ewgYTe hDmYdX sc-iCYwPs bFAnTM" id="combo-tags-menu-chipset" role="group" aria-label="Tags"><a href="https://www.kaggle.com/datasets?tags=2304-Music" target="_blank" role="link" aria-label="Music opens in new tab" class="sc-hbBSlX fNoYrI" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Music</span></a><a href="https://www.kaggle.com/datasets?tags=14104-Text" target="_blank" role="link" aria-label="Text opens in new tab" class="sc-hbBSlX fNoYrI" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Text</span></a><a href="https://www.kaggle.com/datasets?tags=13208-Data+Visualization" target="_blank" role="link" aria-label="Data Visualization opens in new tab" class="sc-hbBSlX fNoYrI" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Data Visualization</span></a><a href="https://www.kaggle.com/datasets?tags=13302-Classification" target="_blank" role="link" aria-label="Classification opens in new tab" class="sc-hbBSlX fNoYrI" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Classification</span></a><a href="https://www.kaggle.com/datasets?tags=13204-NLP" target="_blank" role="link" aria-label="NLP opens in new tab" class="sc-hbBSlX fNoYrI" style="cursor: pointer; margin-right: 0px;"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">NLP</span></a></div><div class="mdc-menu-surface--anchor"></div></div></div></div></div><div class="sc-jfiHih kwfcxO"><div class="sc-hjcfMl loQUqs"><div class="sc-dnOVKr bvIMcp"><div class="sc-jGSeVK lgXOmi"><div class="sc-hagvSa guBIfV"><div class="sc-jNomZN iTEJrz"><h2 class="sc-ovuCP sc-eLkZg jgWmzR ialFTo">readme.md<span class="sc-ovuCP sc-iQfdHJ jgWmzR eGtJKK">(6.04 kB)</span></h2><div class="sc-kwXLfY kRmfYs"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS bHohpu notranslate css-1jgtvd5" aria-hidden="false" role="button" tabindex="0">get_app</span></div><div class="sc-kwXLfY kRmfYs"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS bHohpu notranslate css-1jgtvd5" aria-hidden="false" aria-label="Maximize view" role="button" tabindex="0">fullscreen</span></div><div class="sc-kwXLfY kRmfYs"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS bHohpu notranslate css-1jgtvd5" aria-hidden="false" aria-label="Hide tree" role="button" tabindex="0">chevron_right</span></div></div><div mode="view" class="sc-kaWsxH jPLOgj"><div><div class="sc-cxQtzg eoNOVg"><div class="sc-eauhAA sc-kTcDoJ hnTMYu bkMknC">About this file </div><button title="Add suggestion" aria-label="Add suggestion" class="sc-edmcci eVbxJR sc-gzceIH iWzwwV" tabindex="0" role="button"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">add_comment</span><span class="sc-hJRrWL iwZBhE">Add Suggestion</span></button></div></div><div class="sc-gQaihK sc-jVTtWF bwaGMg kJUiGq"><div class="sc-ePpfBx hvYpEH sc-ifbJqq eNDGdN"><p>This file does not have a description yet.</p></div></div></div><div class="sc-bVSZzh gJHDHO"><div class="sc-hPEvAq flLYIc"><div class="sc-gQaihK sc-dQDVnx bwaGMg"><div class="sc-ePpfBx hvYpEH"><p><img alt="@neonbrand via Unsplash - person holding space gray iPhone 6" src="./30000 Spotify Songs_files/photo-1495434942214-9b525bba74e9"></p>
+<h1>Spotify Songs</h1>
+<p>The data this week comes from Spotify via the <a rel="noreferrer nofollow" aria-label="&lt;code&gt;spotifyr&lt;/code&gt; package (opens in a new tab)" target="_blank" href="https://www.rcharlie.com/spotifyr/"><code>spotifyr</code> package</a>. <a rel="noreferrer nofollow" aria-label="Charlie Thompson (opens in a new tab)" target="_blank" href="https://twitter.com/_RCharlie">Charlie Thompson</a>, <a rel="noreferrer nofollow" aria-label="Josiah Parry (opens in a new tab)" target="_blank" href="https://twitter.com/JosiahParry">Josiah Parry</a>, Donal Phipps, and Tom Wolff authored this package to make it easier to get either your own data or general metadata arounds songs from Spotify's API. Make sure to check out the <a rel="noreferrer nofollow" aria-label="&lt;code&gt;spotifyr&lt;/code&gt; package (opens in a new tab)" target="_blank" href="https://www.rcharlie.com/spotifyr/"><code>spotifyr</code> package</a> website to see how you can collect your own data!</p>
+<p><a rel="noreferrer nofollow" aria-label="Kaylin Pavlik (opens in a new tab)" target="_blank" href="https://twitter.com/kaylinquest/status/1213138536570015745">Kaylin Pavlik</a> had a recent <a rel="noreferrer nofollow" aria-label="blogpost (opens in a new tab)" target="_blank" href="https://www.kaylinpavlik.com/classifying-songs-genres/">blogpost</a> using the audio features to explore and classify songs. She used the <code>spotifyr</code> package to collect about 5000 songs from 6 main categories (EDM, Latin, Pop, R&amp;B, Rap, &amp; Rock). </p>
+<p>h/t to <a rel="noreferrer nofollow" aria-label="Jon Harmon (opens in a new tab)" target="_blank" href="https://github.com/rfordatascience/tidytuesday/issues/160">Jon Harmon</a> &amp; <a rel="noreferrer nofollow" aria-label="Neal Grantham (opens in a new tab)" target="_blank" href="https://twitter.com/nsgrantham/status/1213190975113199616">Neal Grantham</a>.</p>
+<h3>Get the data here</h3>
+<pre class="uc-code-block"><code><span class="hljs-comment"># Get the Data</span>
+
+<span class="hljs-attribute">spotify_songs</span> &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/<span class="hljs-number">2020</span>/<span class="hljs-number">2020</span>-<span class="hljs-number">01</span>-<span class="hljs-number">21</span>/spotify_songs.csv')
+
+<span class="hljs-comment"># Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)</span>
+<span class="hljs-comment"># PLEASE NOTE TO USE 2020 DATA YOU NEED TO UPDATE tidytuesdayR from GitHub</span>
+
+<span class="hljs-comment"># Either ISO-8601 date or year/week works!</span>
+
+<span class="hljs-comment"># Install via devtools::install_github("thebioengineer/tidytuesdayR")</span>
+
+<span class="hljs-attribute">tuesdata</span> &lt;- tidytuesdayR::tt_load('<span class="hljs-number">2020</span>-<span class="hljs-number">01</span>-<span class="hljs-number">21</span>') 
+<span class="hljs-attribute">tuesdata</span> &lt;- tidytuesdayR::tt_load(<span class="hljs-number">2020</span>, week = <span class="hljs-number">4</span>)
+
+
+<span class="hljs-attribute">spotify_songs</span> &lt;- tuesdata$spotify_songs
+</code><div class="uc-code-block-copy-button-wrapper"><button class="uc-code-block-copy-button google-symbols" aria-label="Copy code">content_copy</button></div></pre>
+<h3>Data Dictionary</h3>
+<h1><code>spotify_songs.csv</code></h1>
+<table>
+<thead>
+<tr>
+<th>variable</th>
+<th>class</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>track_id</td>
+<td>character</td>
+<td>Song unique ID</td>
+</tr>
+<tr>
+<td>track_name</td>
+<td>character</td>
+<td>Song Name</td>
+</tr>
+<tr>
+<td>track_artist</td>
+<td>character</td>
+<td>Song Artist</td>
+</tr>
+<tr>
+<td>track_popularity</td>
+<td>double</td>
+<td>Song Popularity (0-100) where higher is better</td>
+</tr>
+<tr>
+<td>track_album_id</td>
+<td>character</td>
+<td>Album unique ID</td>
+</tr>
+<tr>
+<td>track_album_name</td>
+<td>character</td>
+<td>Song album name</td>
+</tr>
+<tr>
+<td>track_album_release_date</td>
+<td>character</td>
+<td>Date when album released</td>
+</tr>
+<tr>
+<td>playlist_name</td>
+<td>character</td>
+<td>Name of playlist</td>
+</tr>
+<tr>
+<td>playlist_id</td>
+<td>character</td>
+<td>Playlist ID</td>
+</tr>
+<tr>
+<td>playlist_genre</td>
+<td>character</td>
+<td>Playlist genre</td>
+</tr>
+<tr>
+<td>playlist_subgenre</td>
+<td>character</td>
+<td>Playlist subgenre</td>
+</tr>
+<tr>
+<td>danceability</td>
+<td>double</td>
+<td>Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.</td>
+</tr>
+<tr>
+<td>energy</td>
+<td>double</td>
+<td>Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>double</td>
+<td>The estimated overall key of the track. Integers map to pitches using standard Pitch Class notation . E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1.</td>
+</tr>
+<tr>
+<td>loudness</td>
+<td>double</td>
+<td>The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>double</td>
+<td>Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.</td>
+</tr>
+<tr>
+<td>speechiness</td>
+<td>double</td>
+<td>Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks.</td>
+</tr>
+<tr>
+<td>acousticness</td>
+<td>double</td>
+<td>A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.</td>
+</tr>
+<tr>
+<td>instrumentalness</td>
+<td>double</td>
+<td>Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.</td>
+</tr>
+<tr>
+<td>liveness</td>
+<td>double</td>
+<td>Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.</td>
+</tr>
+<tr>
+<td>valence</td>
+<td>double</td>
+<td>A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).</td>
+</tr>
+<tr>
+<td>tempo</td>
+<td>double</td>
+<td>The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.</td>
+</tr>
+<tr>
+<td>duration_ms</td>
+<td>double</td>
+<td>Duration of song in milliseconds</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div></div><div class="sc-sYGvw jyFgfm"><div class="sc-fqpjkJ hSywyo"><div class="sc-fJqfNw eNdyrR"><div class="sc-kGGICJ bjDTAS"><h2 class="sc-eOzmre sc-jygJjm iyFMKB">Data Explorer</h2><p class="sc-gQaihK sc-dgbCzD iUbclf fjuJGu"><a class="sc-epnzzT byHrwp">Version 2</a> (7.98 MB)</p></div><ul class="sc-irySwE jTCixk"><li class="sc-QTMty hvWQeO"><div class="sc-fbMPYm sc-eJqIHI xTFOc DtnTi"><div aria-hidden="true" class="sc-jJJXNf gSyjZK"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">article</span></div><div class="sc-ikVGZy ienuTj"><div class=""><p class="sc-gQaihK sc-gKsybB bwaGMg cLagRY">readme.md</p></div></div></div></li><li class="sc-QTMty hvWQeO"><div class="sc-fbMPYm sc-eJqIHI jlYPwz DtnTi"><div aria-hidden="true" class="sc-jJJXNf caJMVJ"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">calendar_view_week</span></div><div class="sc-ikVGZy ienuTj"><div class=""><p class="sc-gQaihK sc-gKsybB bwaGMg hCPfmr">spotify_songs.csv</p></div></div></div></li></ul></div></div><div class="sc-feqZCu kDUbkU"><h2 class="sc-eOzmre sc-iWiwPW iyFMKB hJxBeA">Summary</h2><div class="sc-hDXsgX izAzyN"><div class="sc-jkPZFm dZAmbd"><div class="sc-bwmSDE cpabpd"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS cWGtHq notranslate sc-koRrMB gccDOF css-1jgtvd5" aria-hidden="true">arrow_right</span></div><div class="sc-jJJXNf caJMVJ"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">folder</span></div><p class="sc-gQaihK sc-fSZtmc iUbclf jphwOS">2 files</p></div></div><div class="sc-hDXsgX izAzyN"><div class="sc-jkPZFm dZAmbd"><div class="sc-bwmSDE cpabpd"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS cWGtHq notranslate sc-koRrMB gccDOF css-1jgtvd5" aria-hidden="true">arrow_right</span></div><div class="sc-jJJXNf caJMVJ"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">calendar_view_week</span></div><p class="sc-gQaihK sc-fSZtmc iUbclf jphwOS">23 columns</p></div></div></div></div></div></div></div><div class="sc-hiwsbH taPMz"><div><div class="sc-ddGHkk soffp sc-ekrnMf sc-gjkTPW gchvOx bQHIqL"><div class="sc-hzyFKJ eHKwxF"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">lightbulb</span><div class="sc-zlfrG jLFdhj"><h2 class="sc-cHqXqK sc-cgxxSg bTsuQr hdHryl">See what others are saying about this dataset</h2></div></div></div><h3 id="used-dataset-for" class="sc-eOzmre iyFMKB">What have you used this dataset for?</h3><div class="sc-ewgYTe hDmYdX sc-ijszdh geIqkn" role="group" aria-labelledby="used-dataset-for"><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Learning 75</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Research 25</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Application 4</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">LLM Fine-Tuning 0</span></button></div><h3 id="describe-dataset" class="sc-eOzmre iyFMKB">How would you describe this dataset?</h3><div class="sc-ewgYTe hDmYdX sc-ijszdh geIqkn" role="group" aria-labelledby="describe-dataset"><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Well-documented 29</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Well-maintained 6</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Clean data 29</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Original 5</span></button><button role="checkbox" aria-checked="false" aria-label="" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">High-quality notebooks 3</span></button><button role="checkbox" aria-checked="false" aria-label="Other" class="sc-hbBSlX fdFnWD"><span class="sc-eUlrpB sc-cFJTLy dpOfYN iFDCvp">Other</span></button></div></div></div><div class="sc-hGNhLO ccTMQm"></div><div class="sc-hAABnf jbdKOo"><div class="sc-ddGHkk soffp sc-iEsPXT fLnbDk"><div class="sc-hzyFKJ eHKwxF"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">text_snippet</span><div class="sc-zlfrG jLFdhj"><h2 class="sc-cHqXqK sc-cgxxSg bTsuQr hdHryl">Metadata</h2></div></div><button tabindex="0" role="button" class="sc-edmcci eVbxJR"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">unfold_more</span><span class="sc-hJRrWL iwZBhE">Expand all</span></button></div><div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Collaborators</h3></div><button aria-label="Expand Collaborators" title="Expand Collaborators" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Authors</h3></div><button aria-label="Expand Authors" title="Expand Authors" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Coverage</h3></div><button aria-label="Expand Coverage" title="Expand Coverage" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">DOI Citation</h3></div><button aria-label="Expand DOI Citation" title="Expand DOI Citation" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Provenance</h3></div><button aria-label="Expand Provenance" title="Expand Provenance" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">License</h3></div><button aria-label="Expand License" title="Expand License" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div><div class="sc-kpAHqd lhdEPz"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Expected Update Frequency</h3></div><button aria-label="Expand Expected Update Frequency" title="Expand Expected Update Frequency" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_down</button></div></div></div></div><div class="sc-cWCVeZ dNKxmg"><div class="sc-ddGHkk soffp sc-kLlgCo gtFVOL"><div class="sc-hzyFKJ eHKwxF"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">insights</span><div class="sc-zlfrG jLFdhj"><h2 class="sc-cHqXqK sc-cgxxSg bTsuQr hdHryl">Activity Overview</h2></div></div></div><div class="sc-eUHDiG cWjdPg sc-bCPstD jrSyrJ"><div class="sc-grkHWm jIvfWC"><div class="sc-bdYMGw bwiJVX"><div class="sc-eFDKYm iNPfIR"><div class="sc-hHPuqt lohDPi"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-gGTnoT bslUWd css-1jgtvd5" aria-hidden="true">visibility</span></div><h3 class="sc-eOzmre iyFMKB">Views</h3></div><div class="sc-loBkLz eVNDpH"><div class="sc-dfooXd bCZOPY"></div><div class="sc-fGzRZM gestoM"><span class="sc-ovuCP sc-ljusIj jgWmzR bxYFRY">116K</span><div class="sc-jRYfXT epeKHr sc-jieQrC jibIHX"><div style="height: 100%; width: 100%;"><div id="reactgooglegraph-9" style="height: 100%; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 65px; height: 20px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="65" height="20" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_80"><clippath id="_ABSTRACT_RENDERER_ID_81"><rect x="0" y="0" width="65" height="20"></rect></clippath></defs><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#_ABSTRACT_RENDERER_ID_81)"><g><g><path d="M0.5,19.5L0.5,19.5L0.5,12.202898550724637L2.7857142857142856,9.105072463768115L5.071428571428571,5.52536231884058L7.357142857142858,5.869565217391305L9.642857142857142,6.695652173913043L11.928571428571429,5.4565217391304355L14.214285714285715,11.514492753623188L16.5,12.340579710144928L18.785714285714285,11.032608695652174L21.071428571428573,7.590579710144928L23.357142857142858,2.221014492753625L25.642857142857142,6.007246376811594L27.92857142857143,4.69927536231884L30.214285714285715,3.1847826086956523L32.5,9.58695652173913L34.785714285714285,9.44927536231884L37.07142857142857,5.25L39.35714285714286,4.079710144927535L41.642857142857146,4.630434782608695L43.92857142857143,3.253623188405797L46.214285714285715,4.69927536231884L48.5,9.380434782608695L50.785714285714285,10.619565217391305L53.07142857142858,1.4637681159420275L55.35714285714286,0.5L57.642857142857146,3.047101449275363L59.92857142857143,2.702898550724637L62.214285714285715,5.387681159420289L64.5,9.58695652173913L64.5,19.5L64.5,19.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#20beff"></path></g></g><g><path d="M0.5,12.202898550724637L2.7857142857142856,9.105072463768115L5.071428571428571,5.52536231884058L7.357142857142858,5.869565217391305L9.642857142857142,6.695652173913043L11.928571428571429,5.4565217391304355L14.214285714285715,11.514492753623188L16.5,12.340579710144928L18.785714285714285,11.032608695652174L21.071428571428573,7.590579710144928L23.357142857142858,2.221014492753625L25.642857142857142,6.007246376811594L27.92857142857143,4.69927536231884L30.214285714285715,3.1847826086956523L32.5,9.58695652173913L34.785714285714285,9.44927536231884L37.07142857142857,5.25L39.35714285714286,4.079710144927535L41.642857142857146,4.630434782608695L43.92857142857143,3.253623188405797L46.214285714285715,4.69927536231884L48.5,9.380434782608695L50.785714285714285,10.619565217391305L53.07142857142858,1.4637681159420275L55.35714285714286,0.5L57.642857142857146,3.047101449275363L59.92857142857143,2.702898550724637L62.214285714285715,5.387681159420289L64.5,9.58695652173913" stroke="#20beff" stroke-width="1" fill-opacity="1" fill="none"></path></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Views</th></tr></thead><tbody><tr><td>Oct 26, 2024</td><td>106</td></tr><tr><td>Oct 27, 2024</td><td>151</td></tr><tr><td>Oct 28, 2024</td><td>203</td></tr><tr><td>Oct 29, 2024</td><td>198</td></tr><tr><td>Oct 30, 2024</td><td>186</td></tr><tr><td>Oct 31, 2024</td><td>204</td></tr><tr><td>Nov 1, 2024</td><td>116</td></tr><tr><td>Nov 2, 2024</td><td>104</td></tr><tr><td>Nov 3, 2024</td><td>123</td></tr><tr><td>Nov 4, 2024</td><td>173</td></tr><tr><td>Nov 5, 2024</td><td>251</td></tr><tr><td>Nov 6, 2024</td><td>196</td></tr><tr><td>Nov 7, 2024</td><td>215</td></tr><tr><td>Nov 8, 2024</td><td>237</td></tr><tr><td>Nov 9, 2024</td><td>144</td></tr><tr><td>Nov 10, 2024</td><td>146</td></tr><tr><td>Nov 11, 2024</td><td>207</td></tr><tr><td>Nov 12, 2024</td><td>224</td></tr><tr><td>Nov 13, 2024</td><td>216</td></tr><tr><td>Nov 14, 2024</td><td>236</td></tr><tr><td>Nov 15, 2024</td><td>215</td></tr><tr><td>Nov 16, 2024</td><td>147</td></tr><tr><td>Nov 17, 2024</td><td>129</td></tr><tr><td>Nov 18, 2024</td><td>262</td></tr><tr><td>Nov 19, 2024</td><td>276</td></tr><tr><td>Nov 20, 2024</td><td>239</td></tr><tr><td>Nov 21, 2024</td><td>244</td></tr><tr><td>Nov 22, 2024</td><td>205</td></tr><tr><td>Nov 23, 2024</td><td>144</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 30px; left: 75px; white-space: nowrap; font-family: Arial; font-size: 6px; font-weight: bold;"></div><div></div></div></div></div></div></div><div class="sc-jeszdZ dCWOcj"><span class="sc-hbtGpV hfysfq"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS klTDsr notranslate sc-jdgsoA dJBRje css-1jgtvd5" aria-hidden="true">trending_up</span>5497</span><span class="sc-hbtGpV hfysfq">in the last 30 days</span></div></div></div><div class="sc-grkHWm jIvfWC"><div class="sc-bdYMGw bwiJVX"><div class="sc-eFDKYm iNPfIR"><div class="sc-hHPuqt lohDPi"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-gGTnoT bslUWd css-1jgtvd5" aria-hidden="true">download</span></div><h3 class="sc-eOzmre iyFMKB">Downloads</h3></div><div class="sc-loBkLz eVNDpH"><div class="sc-dfooXd bCZOPY"></div><div class="sc-fGzRZM gestoM"><span class="sc-ovuCP sc-ljusIj jgWmzR bxYFRY">21.1K</span><div class="sc-jRYfXT epeKHr sc-jieQrC jibIHX"><div style="height: 100%; width: 100%;"><div id="reactgooglegraph-10" style="height: 100%; width: 100%;"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 65px; height: 20px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="65" height="20" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_82"><clippath id="_ABSTRACT_RENDERER_ID_83"><rect x="0" y="0" width="65" height="20"></rect></clippath></defs><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="0" y="0" width="65" height="20" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#_ABSTRACT_RENDERER_ID_83)"><g><g><path d="M0.5,19.5L0.5,19.5L0.5,17.008196721311474L2.7857142857142856,11.401639344262295L5.071428571428571,11.401639344262295L7.357142857142858,11.09016393442623L9.642857142857142,8.90983606557377L11.928571428571429,1.745901639344261L14.214285714285715,12.647540983606557L16.5,12.33606557377049L18.785714285714285,10.778688524590164L21.071428571428573,12.647540983606557L23.357142857142858,0.5L25.642857142857142,9.844262295081966L27.92857142857143,10.778688524590164L30.214285714285715,9.532786885245901L32.5,10.778688524590164L34.785714285714285,10.155737704918032L37.07142857142857,4.549180327868852L39.35714285714286,8.90983606557377L41.642857142857146,4.549180327868852L43.92857142857143,6.10655737704918L46.214285714285715,3.9262295081967213L48.5,10.778688524590164L50.785714285714285,8.286885245901638L53.07142857142858,6.72950819672131L55.35714285714286,7.040983606557376L57.642857142857146,3.9262295081967213L59.92857142857143,0.8114754098360635L62.214285714285715,8.90983606557377L64.5,8.90983606557377L64.5,19.5L64.5,19.5Z" stroke="none" stroke-width="0" fill-opacity="0.3" fill="#197631"></path></g></g><g><path d="M0.5,17.008196721311474L2.7857142857142856,11.401639344262295L5.071428571428571,11.401639344262295L7.357142857142858,11.09016393442623L9.642857142857142,8.90983606557377L11.928571428571429,1.745901639344261L14.214285714285715,12.647540983606557L16.5,12.33606557377049L18.785714285714285,10.778688524590164L21.071428571428573,12.647540983606557L23.357142857142858,0.5L25.642857142857142,9.844262295081966L27.92857142857143,10.778688524590164L30.214285714285715,9.532786885245901L32.5,10.778688524590164L34.785714285714285,10.155737704918032L37.07142857142857,4.549180327868852L39.35714285714286,8.90983606557377L41.642857142857146,4.549180327868852L43.92857142857143,6.10655737704918L46.214285714285715,3.9262295081967213L48.5,10.778688524590164L50.785714285714285,8.286885245901638L53.07142857142858,6.72950819672131L55.35714285714286,7.040983606557376L57.642857142857146,3.9262295081967213L59.92857142857143,0.8114754098360635L62.214285714285715,8.90983606557377L64.5,8.90983606557377" stroke="#197631" stroke-width="1" fill-opacity="1" fill="none"></path></g></g><g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Downloads</th></tr></thead><tbody><tr><td>Oct 26, 2024</td><td>8</td></tr><tr><td>Oct 27, 2024</td><td>26</td></tr><tr><td>Oct 28, 2024</td><td>26</td></tr><tr><td>Oct 29, 2024</td><td>27</td></tr><tr><td>Oct 30, 2024</td><td>34</td></tr><tr><td>Oct 31, 2024</td><td>57</td></tr><tr><td>Nov 1, 2024</td><td>22</td></tr><tr><td>Nov 2, 2024</td><td>23</td></tr><tr><td>Nov 3, 2024</td><td>28</td></tr><tr><td>Nov 4, 2024</td><td>22</td></tr><tr><td>Nov 5, 2024</td><td>61</td></tr><tr><td>Nov 6, 2024</td><td>31</td></tr><tr><td>Nov 7, 2024</td><td>28</td></tr><tr><td>Nov 8, 2024</td><td>32</td></tr><tr><td>Nov 9, 2024</td><td>28</td></tr><tr><td>Nov 10, 2024</td><td>30</td></tr><tr><td>Nov 11, 2024</td><td>48</td></tr><tr><td>Nov 12, 2024</td><td>34</td></tr><tr><td>Nov 13, 2024</td><td>48</td></tr><tr><td>Nov 14, 2024</td><td>43</td></tr><tr><td>Nov 15, 2024</td><td>50</td></tr><tr><td>Nov 16, 2024</td><td>28</td></tr><tr><td>Nov 17, 2024</td><td>36</td></tr><tr><td>Nov 18, 2024</td><td>41</td></tr><tr><td>Nov 19, 2024</td><td>40</td></tr><tr><td>Nov 20, 2024</td><td>50</td></tr><tr><td>Nov 21, 2024</td><td>60</td></tr><tr><td>Nov 22, 2024</td><td>34</td></tr><tr><td>Nov 23, 2024</td><td>34</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 30px; left: 75px; white-space: nowrap; font-family: Arial; font-size: 6px; font-weight: bold;"></div><div></div></div></div></div></div></div><div class="sc-jeszdZ dCWOcj"><span class="sc-hbtGpV hfysfq"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS kzhOux notranslate sc-jdgsoA dJBRje css-1jgtvd5" aria-hidden="true">trending_up</span>1029</span><span class="sc-hbtGpV hfysfq">in the last 30 days</span></div></div></div><div class="sc-grkHWm jIvfWC"><div class="sc-bdYMGw bwiJVX"><div class="sc-eFDKYm iNPfIR"><div class="sc-hHPuqt lohDPi"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-gGTnoT bslUWd css-1jgtvd5" aria-hidden="true">downloading</span></div><h3 class="sc-eOzmre iyFMKB">Engagement</h3></div><div class="sc-loBkLz eVNDpH"><div class="sc-dfooXd bCZOPY"></div><div class="sc-hdcWNs gvQHnU"><span class="sc-ovuCP sc-eMgWvs jgWmzR jAJsoO">0.18284</span></div><div class="sc-jJxzkF falWPt"><span class="sc-hbtGpV hfysfq"> downloads per view</span></div></div></div><div class="sc-grkHWm jIvfWC"><div class="sc-bdYMGw bwiJVX"><div class="sc-eFDKYm iNPfIR"><div class="sc-hHPuqt lohDPi"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-gGTnoT bslUWd css-1jgtvd5" aria-hidden="true">forum</span></div><h3 class="sc-eOzmre iyFMKB">Comments</h3></div><div class="sc-loBkLz eVNDpH"><div class="sc-dfooXd bCZOPY"></div><div class="sc-hdcWNs gvQHnU"><span class="sc-ovuCP sc-eMgWvs jgWmzR jAJsoO">8</span></div><div class="sc-jJxzkF falWPt"><span class="sc-hbtGpV hfysfq"> posted</span></div></div></div><div class="sc-grkHWm jIvfWC"><div class="sc-bdYMGw bwiJVX"><div class="sc-eFDKYm iNPfIR"><div class="sc-hHPuqt lohDPi"></div><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate sc-gGTnoT bslUWd css-1jgtvd5" aria-hidden="true">person</span></div><h3 class="sc-eOzmre iyFMKB">Top Contributors</h3></div><div class="sc-loBkLz eVNDpH"><div class="sc-dfooXd bCZOPY"></div><div class="sc-iAXzRi PaRqQ"><a href="https://www.kaggle.com/sagravela" aria-label="Alejandro Vargas" class="sc-fDeYYK gUohLu" style="margin-right: 16px;"><div data-testid="avatar-image" title="Alejandro Vargas" class="sc-jYWXzj bZGAAV" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/16490337-kg.jpeg?t=2023-10-02-13-14-33&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 7.183221215612905 28.135254915624213 A 15 15 0 1 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(101, 31, 255);"></path></svg></a><a href="https://www.kaggle.com/jgabrielsb" aria-label="jgabriel_sb" class="sc-fDeYYK gUohLu" style="margin-right: 16px;"><div data-testid="avatar-image" title="jgabriel_sb" class="sc-jYWXzj bZGAAV" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/8367463-kg.jpeg&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 7.183221215612905 28.135254915624213 A 15 15 0 1 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(101, 31, 255);"></path></svg></a><a href="https://www.kaggle.com/riainoo" aria-label="Ryan A. Jacobs" class="sc-fDeYYK gUohLu" style="margin-right: 16px;"><div data-testid="avatar-image" title="Ryan A. Jacobs" class="sc-jYWXzj bZGAAV" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/10549608-kg.jpg?t=2023-12-06-23-57-40&quot;);"></div><svg width="32" height="32" viewBox="0 0 32 32"><circle r="15" cx="16" cy="16" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 24.816778784387097 28.135254915624213 A 15 15 0 0 0 16 1" fill="none" stroke-width="2" style="stroke: rgb(32, 190, 255);"></path></svg></a></div></div></div></div><div class="sc-kpAHqd lhdEPz sc-joIbOI dWzMBt"><div class="sc-gvlNCs jdpbhu"><div class="sc-bCztur dnjFQb"><h3 class="sc-ovuCP jgWmzR">Detail View</h3></div><button aria-label="Collapse Detail View" title="Collapse Detail View" class="sc-cwJYja kWGtZT google-symbols notranslate" style="flex-shrink: 0;">keyboard_arrow_up</button></div><div><div class="sc-etfZSF iKPLCg"><div class="sc-cmJFyI BnAMo sc-hVSBEW dBMbKY"><div class="sc-eKsaxX emXRrC"><h4 class="sc-eOzmre sc-ldvjJq iyFMKB dtYGsQ">Views</h4><div class="MuiFormControl-root sc-gcfzXs enhSsM sc-sgxPq gioqNR css-13sljp9"><div class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1pby7ch"><div tabindex="0" role="combobox" aria-controls=":r9c:" aria-expanded="false" aria-haspopup="listbox" aria-label="Select combobox. Last month currently selected." class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1ii1y2a"><div class="sc-hGZxvd emsMoT"><div class="sc-fFoeYl tvNbw">Last month</div></div></div><input aria-invalid="false" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3" value="[object Object]"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-1utq5rl" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg></div></div></div><div><div id="reactgooglegraph-11" class="sc-jxVPKx DfJAQ"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 580px; height: 200px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="580" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_84"><clippath id="_ABSTRACT_RENDERER_ID_85"><rect x="44" y="38" width="493" height="124"></rect></clippath></defs><rect x="0" y="0" width="580" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="44" y="38" width="493" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#_ABSTRACT_RENDERER_ID_85)"><g><rect x="44" y="161" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="120" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="79" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="38" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><path d="M44.5,118.03999999999999L62.07142857142857,99.59L79.64285714285714,78.27000000000001L97.21428571428572,80.32000000000001L114.78571428571429,85.24000000000001L132.35714285714286,77.86L149.92857142857144,113.94L167.5,118.86L185.07142857142858,111.07L202.64285714285714,90.57000000000001L220.21428571428572,58.59L237.78571428571428,81.14L255.35714285714286,73.35000000000001L272.92857142857144,64.33000000000001L290.5,102.46000000000001L308.07142857142856,101.64L325.64285714285717,76.63000000000001L343.2142857142857,69.66000000000001L360.7857142857143,72.94000000000001L378.35714285714283,64.74000000000001L395.92857142857144,73.35000000000001L413.5,101.23L431.07142857142856,108.61000000000001L448.64285714285717,54.08000000000001L466.2142857142857,48.34L483.7857142857143,63.510000000000005L501.35714285714283,61.46000000000001L518.9285714285714,77.45L536.5,102.46000000000001" stroke="#20beff" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="middle" x="78.91071428571428" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">10/28</text></g><g><text text-anchor="middle" x="201.91071428571428" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">11/04</text></g><g><text text-anchor="middle" x="324.9107142857143" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">11/11</text></g><g><text text-anchor="middle" x="447.9107142857143" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">11/18</text></g><g><text text-anchor="end" x="32" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="32" y="124.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">100</text></g><g><text text-anchor="end" x="32" y="83.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">200</text></g><g><text text-anchor="end" x="32" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">300</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Views</th></tr></thead><tbody><tr><td>Oct 26, 2024</td><td>106</td></tr><tr><td>Oct 27, 2024</td><td>151</td></tr><tr><td>Oct 28, 2024</td><td>203</td></tr><tr><td>Oct 29, 2024</td><td>198</td></tr><tr><td>Oct 30, 2024</td><td>186</td></tr><tr><td>Oct 31, 2024</td><td>204</td></tr><tr><td>Nov 1, 2024</td><td>116</td></tr><tr><td>Nov 2, 2024</td><td>104</td></tr><tr><td>Nov 3, 2024</td><td>123</td></tr><tr><td>Nov 4, 2024</td><td>173</td></tr><tr><td>Nov 5, 2024</td><td>251</td></tr><tr><td>Nov 6, 2024</td><td>196</td></tr><tr><td>Nov 7, 2024</td><td>215</td></tr><tr><td>Nov 8, 2024</td><td>237</td></tr><tr><td>Nov 9, 2024</td><td>144</td></tr><tr><td>Nov 10, 2024</td><td>146</td></tr><tr><td>Nov 11, 2024</td><td>207</td></tr><tr><td>Nov 12, 2024</td><td>224</td></tr><tr><td>Nov 13, 2024</td><td>216</td></tr><tr><td>Nov 14, 2024</td><td>236</td></tr><tr><td>Nov 15, 2024</td><td>215</td></tr><tr><td>Nov 16, 2024</td><td>147</td></tr><tr><td>Nov 17, 2024</td><td>129</td></tr><tr><td>Nov 18, 2024</td><td>262</td></tr><tr><td>Nov 19, 2024</td><td>276</td></tr><tr><td>Nov 20, 2024</td><td>239</td></tr><tr><td>Nov 21, 2024</td><td>244</td></tr><tr><td>Nov 22, 2024</td><td>205</td></tr><tr><td>Nov 23, 2024</td><td>144</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 590px; white-space: nowrap; font-family: Arial; font-size: 12px;">300</div><div></div></div></div></div></div><div class="sc-cmJFyI BnAMo sc-hVSBEW dBMbKY"><div class="sc-eKsaxX emXRrC"><h4 class="sc-eOzmre sc-ldvjJq iyFMKB dtYGsQ">Downloads</h4><div class="MuiFormControl-root sc-gcfzXs enhSsM sc-sgxPq gioqNR css-13sljp9"><div class="MuiInputBase-root MuiInput-root MuiInputBase-colorPrimary MuiInputBase-formControl  css-1pby7ch"><div tabindex="0" role="combobox" aria-controls=":r9e:" aria-expanded="false" aria-haspopup="listbox" aria-label="Select combobox. Last month currently selected." class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-1ii1y2a"><div class="sc-hGZxvd emsMoT"><div class="sc-fFoeYl tvNbw">Last month</div></div></div><input aria-invalid="false" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3" value="[object Object]"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconStandard css-1utq5rl" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon"><path d="M7 10l5 5 5-5z"></path></svg></div></div></div><div><div id="reactgooglegraph-12" class="sc-jxVPKx DfJAQ"><div style="position: relative;"><div dir="ltr" style="position: relative; width: 580px; height: 200px;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart."><svg width="580" height="200" aria-label="A chart." style="overflow: hidden;"><defs id="_ABSTRACT_RENDERER_ID_86"><clippath id="_ABSTRACT_RENDERER_ID_87"><rect x="44" y="38" width="493" height="124"></rect></clippath></defs><rect x="0" y="0" width="580" height="200" stroke="none" stroke-width="0" fill="#ffffff"></rect><g><rect x="44" y="38" width="493" height="124" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect><g clip-path="url(https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs/data#_ABSTRACT_RENDERER_ID_87)"><g><rect x="44" y="161" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="100" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect><rect x="44" y="38" width="493" height="1" stroke="none" stroke-width="0" fill="#cccccc"></rect></g><g><path d="M44.5,151.66L62.07142857142857,129.52L79.64285714285714,129.52L97.21428571428572,128.29L114.78571428571429,119.68L132.35714285714286,91.39L149.92857142857144,134.44L167.5,133.21L185.07142857142858,127.06L202.64285714285714,134.44L220.21428571428572,86.47L237.78571428571428,123.37L255.35714285714286,127.06L272.92857142857144,122.14L290.5,127.06L308.07142857142856,124.6L325.64285714285717,102.46000000000001L343.2142857142857,119.68L360.7857142857143,102.46000000000001L378.35714285714283,108.61L395.92857142857144,100L413.5,127.06L431.07142857142856,117.22L448.64285714285717,111.07L466.2142857142857,112.3L483.7857142857143,100L501.35714285714283,87.7L518.9285714285714,119.68L536.5,119.68" stroke="#197631" stroke-width="2" fill-opacity="1" fill="none"></path></g></g><g></g><g><g><text text-anchor="middle" x="78.91071428571428" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">10/28</text></g><g><text text-anchor="middle" x="201.91071428571428" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">11/04</text></g><g><text text-anchor="middle" x="324.9107142857143" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">11/11</text></g><g><text text-anchor="middle" x="447.9107142857143" y="179.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">11/18</text></g><g><text text-anchor="end" x="32" y="165.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">0</text></g><g><text text-anchor="end" x="32" y="104.2" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">50</text></g><g><text text-anchor="end" x="32" y="42.7" font-family="Arial" font-size="12" stroke="none" stroke-width="0" fill="#444444">100</text></g></g></g><g></g></svg><div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;"><table><thead><tr><th>date</th><th>Downloads</th></tr></thead><tbody><tr><td>Oct 26, 2024</td><td>8</td></tr><tr><td>Oct 27, 2024</td><td>26</td></tr><tr><td>Oct 28, 2024</td><td>26</td></tr><tr><td>Oct 29, 2024</td><td>27</td></tr><tr><td>Oct 30, 2024</td><td>34</td></tr><tr><td>Oct 31, 2024</td><td>57</td></tr><tr><td>Nov 1, 2024</td><td>22</td></tr><tr><td>Nov 2, 2024</td><td>23</td></tr><tr><td>Nov 3, 2024</td><td>28</td></tr><tr><td>Nov 4, 2024</td><td>22</td></tr><tr><td>Nov 5, 2024</td><td>61</td></tr><tr><td>Nov 6, 2024</td><td>31</td></tr><tr><td>Nov 7, 2024</td><td>28</td></tr><tr><td>Nov 8, 2024</td><td>32</td></tr><tr><td>Nov 9, 2024</td><td>28</td></tr><tr><td>Nov 10, 2024</td><td>30</td></tr><tr><td>Nov 11, 2024</td><td>48</td></tr><tr><td>Nov 12, 2024</td><td>34</td></tr><tr><td>Nov 13, 2024</td><td>48</td></tr><tr><td>Nov 14, 2024</td><td>43</td></tr><tr><td>Nov 15, 2024</td><td>50</td></tr><tr><td>Nov 16, 2024</td><td>28</td></tr><tr><td>Nov 17, 2024</td><td>36</td></tr><tr><td>Nov 18, 2024</td><td>41</td></tr><tr><td>Nov 19, 2024</td><td>40</td></tr><tr><td>Nov 20, 2024</td><td>50</td></tr><tr><td>Nov 21, 2024</td><td>60</td></tr><tr><td>Nov 22, 2024</td><td>34</td></tr><tr><td>Nov 23, 2024</td><td>34</td></tr></tbody></table></div></div></div><div aria-hidden="true" style="display: none; position: absolute; top: 210px; left: 590px; white-space: nowrap; font-family: Arial; font-size: 12px;">100</div><div></div></div></div></div></div></div></div></div></div><div><div class="sc-vBNWb jYtdBR"><div class="sc-kLLZjm dLiREr"><div class="sc-ddGHkk soffp"><div class="sc-hzyFKJ eHKwxF"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">code</span><div class="sc-zlfrG jLFdhj"><h2 class="sc-cHqXqK sc-eVddSf bTsuQr fjtNeU">Related Notebooks</h2></div></div><button aria-label="See all Related Notebooks " data-testid="expandButton" tabindex="0" role="button" class="sc-edmcci hWBjkA"><span class="sc-hJRrWL iwZBhE">See all</span></button></div></div><div role="list" class="sc-jFVDQN hMzJMP"><div role="listitem" aria-label="SpotifySongs EDA" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a tabindex="0" href="https://www.kaggle.com/code/sagravela/spotifysongs-eda" class="sc-dvOJQH dnyItE" style="flex-grow: 1;"><img src="./30000 Spotify Songs_files/dataset-thumbnail.png" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-eNzXIM bxoPpk"><div class="sc-eauhAA sc-deCJlp hnTMYu gpYmXv" style="max-height: 3em; overflow: hidden;">SpotifySongs EDA</div><div class="mdc-menu-surface--anchor"><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate sc-cQdEnQ dzxeWc">more_vert</button><div></div></div></div><div><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">Updated <span title="Wed Jul 24 2024 00:51:55 GMT+0200 (Central European Summer Time)" aria-label="4 months ago">4 months ago</span></span></div><div><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">30000 Spotify Songs</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">37</span></div><div class="sc-SmNGS dumiOt"><img alt="bronze medal" src="./30000 Spotify Songs_files/bronzes@2x.png" title="bronze medal" class="sc-fMLvUx lcOHEi"><a href="https://www.kaggle.com/sagravela" target="_blank" aria-label="Alejandro Vargas" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="Alejandro Vargas" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/16490337-kg.jpeg?t=2023-10-02-13-14-33&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 5.534362224782797 20.899186938124423 A 11 11 0 1 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(101, 31, 255);"></path></svg></a></div></div></div><div role="listitem" aria-label="Statistics - Ryan Jacobs" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a tabindex="0" href="https://www.kaggle.com/code/riainoo/statistics-ryan-jacobs" class="sc-dvOJQH dnyItE" style="flex-grow: 1;"><img src="./30000 Spotify Songs_files/__results___146_0.png" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-eNzXIM bxoPpk"><div class="sc-eauhAA sc-deCJlp hnTMYu gpYmXv" style="max-height: 3em; overflow: hidden;">Statistics - Ryan Jacobs</div><div class="mdc-menu-surface--anchor"><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate sc-cQdEnQ dzxeWc">more_vert</button><div></div></div></div><div><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">Updated <span title="Tue Dec 12 2023 04:24:29 GMT+0100 (Central European Standard Time)" aria-label="a year ago">a year ago</span></span></div><div><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">30000 Spotify Songs+1</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">29</span></div><div class="sc-SmNGS dumiOt"><img alt="silver medal" src="./30000 Spotify Songs_files/silvers@2x.png" title="silver medal" class="sc-fMLvUx lcOHEi"><a href="https://www.kaggle.com/riainoo" target="_blank" aria-label="Ryan A. Jacobs" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="Ryan A. Jacobs" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/10549608-kg.jpg?t=2023-12-06-23-57-40&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 18.465637775217203 20.899186938124423 A 11 11 0 0 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(32, 190, 255);"></path></svg></a></div></div></div><div role="listitem" aria-label="Music Recommendation System - Spotify Dataset" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a tabindex="0" href="https://www.kaggle.com/code/damlapeker/music-recommendation-system-spotify-dataset" class="sc-dvOJQH dnyItE" style="flex-grow: 1;"><img src="./30000 Spotify Songs_files/__results___16_1.png" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-eNzXIM bxoPpk"><div class="sc-eauhAA sc-deCJlp hnTMYu gpYmXv" style="max-height: 3em; overflow: hidden;">Music Recommendation System - Spotify Dataset</div><div class="mdc-menu-surface--anchor"><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate sc-cQdEnQ dzxeWc">more_vert</button><div></div></div></div><div><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">Updated <span title="Wed Apr 24 2024 10:43:46 GMT+0200 (Central European Summer Time)" aria-label="7 months ago">7 months ago</span></span></div><div><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">30000 Spotify Songs+1</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">28</span></div><div class="sc-SmNGS dumiOt"><img alt="bronze medal" src="./30000 Spotify Songs_files/bronzes@2x.png" title="bronze medal" class="sc-fMLvUx lcOHEi"><a href="https://www.kaggle.com/damlapeker" target="_blank" aria-label="damla peker" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="damla peker" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/9601258-kg.png?t=2024-01-18-21-53-21&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 5.534362224782797 20.899186938124423 A 11 11 0 1 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(101, 31, 255);"></path></svg></a></div></div></div></div></div><div class="sc-vBNWb jYtdBR"><div class="sc-kLLZjm dLiREr"><div class="sc-ddGHkk soffp"><div class="sc-hzyFKJ eHKwxF"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jrSFAm notranslate css-1jgtvd5" aria-hidden="true">table_chart</span><div class="sc-zlfrG jLFdhj"><h2 class="sc-cHqXqK sc-eVddSf bTsuQr fjtNeU">Similar Datasets</h2></div></div></div></div><div role="list" class="sc-jFVDQN hMzJMP"><div role="listitem" aria-label="COVID-19 Open Research Dataset Challenge (CORD-19)" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a id="551982" tabindex="0" href="https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge" class="sc-dvOJQH dnyItE"><img src="./30000 Spotify Songs_files/dataset-thumbnail(1).png" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-ehSesU kItNQe"><div class="sc-eauhAA sc-deCJlp sc-IqPaQ hnTMYu gpYmXv kUGgdP">COVID-19 Open Research Dataset Challenge (CORD-19)</div><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/organizations/allen-institute-for-ai">Allen Institute For AI</a> · Updated <span title="Mon Jun 06 2022 21:39:40 GMT+0200 (Central European Summer Time)" aria-label="2 years ago">2 years ago</span></span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><span class="">Usability&nbsp;<span class="sc-fEJpot gKunnz">8.8</span></span> · 20 GB</span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">717120 Files (JSON, CSV, other)</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">10973</span></div><div class="sc-kkLoAj jrgOvh"><img role="presentation" alt="" src="./30000 Spotify Songs_files/goldl@2x.png" class="sc-fnuLKW jXbuRv"> <a href="https://www.kaggle.com/organizations/allen-institute-for-ai" target="_blank" aria-label="Allen Institute For AI" class="sc-fDeYYK dHYbGt"><div data-testid="avatar-image" title="Allen Institute For AI" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-organizations/3737/thumbnail.png?r=807&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: transparent;"></circle><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(32, 33, 36);"></circle></svg></a></div></div></div><div role="listitem" aria-label="Netflix Movies and TV Shows" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a id="434238" tabindex="0" href="https://www.kaggle.com/datasets/shivamb/netflix-shows" class="sc-dvOJQH dnyItE"><img src="./30000 Spotify Songs_files/dataset-thumbnail.jpg" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-ehSesU kItNQe"><div class="sc-eauhAA sc-deCJlp sc-IqPaQ hnTMYu gpYmXv kUGgdP">Netflix Movies and TV Shows</div><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/shivamb">Shivam Bansal</a> · Updated <span title="Mon Sep 27 2021 06:44:36 GMT+0200 (Central European Summer Time)" aria-label="3 years ago">3 years ago</span></span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><span class="">Usability&nbsp;<span class="sc-fEJpot kdsNzb">10.0</span></span> · 1 MB</span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">1 File (CSV)</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">8710</span></div><div class="sc-kkLoAj jrgOvh"><img role="presentation" alt="" src="./30000 Spotify Songs_files/goldl@2x.png" class="sc-fnuLKW jXbuRv"> <a href="https://www.kaggle.com/shivamb" target="_blank" aria-label="Shivam Bansal" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="Shivam Bansal" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/1571785-kg.jpeg&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(250, 224, 65);"></circle></svg></a></div></div></div><div role="listitem" aria-label="Data Science Cheat Sheets" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a id="501056" tabindex="0" href="https://www.kaggle.com/datasets/timoboz/data-science-cheat-sheets" class="sc-dvOJQH dnyItE"><img src="./30000 Spotify Songs_files/dataset-thumbnail(2).JPG" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-ehSesU kItNQe"><div class="sc-eauhAA sc-deCJlp sc-IqPaQ hnTMYu gpYmXv kUGgdP">Data Science Cheat Sheets</div><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/timoboz">Timo Bozsolik</a> · Updated <span title="Tue Feb 04 2020 20:42:27 GMT+0100 (Central European Standard Time)" aria-label="5 years ago">5 years ago</span></span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><span class="">Usability&nbsp;<span class="sc-fEJpot gKunnz">8.8</span></span> · 625 MB</span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">251 Files (other)</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">5282</span></div><div class="sc-kkLoAj jrgOvh"><img role="presentation" alt="" src="./30000 Spotify Songs_files/goldl@2x.png" class="sc-fnuLKW jXbuRv"> <a href="https://www.kaggle.com/timoboz" target="_blank" aria-label="Timo Bozsolik" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="Timo Bozsolik" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/998023-gp.jpg&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 1.5383783207533117 8.600813061875575 A 11 11 0 1 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(255, 92, 25);"></path></svg></a></div></div></div><div role="listitem" aria-label="Students Performance in Exams" class="sc-hkhaRw sc-fGiiCH gFcnKi kmNPzB"><a id="74977" tabindex="0" href="https://www.kaggle.com/datasets/spscientist/students-performance-in-exams" class="sc-dvOJQH dnyItE"><img src="./30000 Spotify Songs_files/dataset-thumbnail(3).jpg" alt="" class="sc-jzzKwG kMKOmM"><div class="sc-jYgujM sIePW"><div class="sc-ehSesU kItNQe"><div class="sc-eauhAA sc-deCJlp sc-IqPaQ hnTMYu gpYmXv kUGgdP">Students Performance in Exams</div><button aria-label="more_vert" class="sc-cwJYja jisiwE google-symbols notranslate">more_vert</button></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><a class="sc-uYFMi jZWMzp" href="https://www.kaggle.com/spscientist">Jakki Seshapanpu</a> · Updated <span title="Fri Nov 09 2018 19:25:25 GMT+0100 (Central European Standard Time)" aria-label="6 years ago">6 years ago</span></span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk"><span class="">Usability&nbsp;<span class="sc-fEJpot gKunnz">7.1</span></span> · 9 kB</span></div><div class="sc-gwZUyZ jAfDVy"><span class="sc-geXuza sc-cfrkZE eJddeL gQRzLk">1 File (CSV)</span></div></div></a><div class="sc-bRylSD htIovg"><div class="sc-cVKgyc HVBPD"><button mode="default" data-testid="upvotebutton__upvote" aria-label="Upvote" title="Upvote" class="sc-fwHUOm sc-gvAMtO WtHea bTCyHx"><span class="google-symbols notranslate MuiIcon-root MuiIcon-fontSizeMedium sc-FFETS jdzuMt notranslate css-1jgtvd5" aria-hidden="true">arrow_drop_up</span></button><span mode="default" aria-live="polite" class="sc-hJRrWL sc-dPPnpX iwZBhE fOdQTb">4397</span></div><div class="sc-kkLoAj jrgOvh"><img role="presentation" alt="" src="./30000 Spotify Songs_files/goldl@2x.png" class="sc-fnuLKW jXbuRv"> <a href="https://www.kaggle.com/spscientist" target="_blank" aria-label="Jakki Seshapanpu" class="sc-fDeYYK gUohLu"><div data-testid="avatar-image" title="Jakki Seshapanpu" class="sc-jYWXzj geToXJ" style="background-image: url(&quot;https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png&quot;);"></div><svg width="24" height="24" viewBox="0 0 24 24"><circle r="11" cx="12" cy="12" fill="none" stroke-width="2" style="stroke: rgb(241, 243, 244);"></circle><path d="M 18.465637775217203 20.899186938124423 A 11 11 0 0 0 12 1" fill="none" stroke-width="2" style="stroke: rgb(32, 190, 255);"></path></svg></a></div></div></div></div></div></div></div><div class="sc-eOYQXa igUCBL"></div></div></div></div></div></div><div aria-live="polite" aria-atomic="true" role="alert" class="sc-hRvRfm dILTB"></div><div style="position: relative; z-index: 1000;"><div class="sc-bMamjt dgQULt"></div></div></div></div>
+
+<div id="site-body" class="hide">
+    
+
+
+<script nonce="" type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+    <!-- Cheers, web-6d897c5bf6-npvr6p. -->
+
+  </main>
+
+
+
+<div id="capture_chrome" data-v-app=""><div data-v-ac6fd69d="" class="wrap"></div><!----></div><iframe id="z7zzJwso" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="f4rEHGto" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(1).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="PE1M7A5F" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(2).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="9NiQbkgL" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(3).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="Mxtxu8Cr" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(4).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="2d0UcITk" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(5).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="Tn84B913" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(6).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="KuY4oCOz" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(7).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="HdLhsf6B" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(8).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="Y6uTUrnB" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(9).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="VbfjsHI3" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(10).html" style="width: 0px; height: 0px; display: none;"></iframe><iframe id="EBEBhSr0" frameborder="0" src="./30000 Spotify Songs_files/translateSandbox(11).html" style="width: 0px; height: 0px; display: none;"></iframe></body></html>
