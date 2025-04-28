@@ -1,20 +1,17 @@
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
 import torch
-import xgboost as xgb
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import ParameterGrid
-from src.data_loader import *
-from src.models import *
-from src.utils import *
-from src.training import *
+from data_loader import *
+from models import *
+from utils import *
+from training import *
 from config import *
 import warnings
-import random
-import concurrent.futures
 import logging
-import concurrent.futures
 import pandas as pd
+import os 
+
 from sklearn.model_selection import ParameterGrid
 warnings.filterwarnings("ignore")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
@@ -253,7 +250,7 @@ def neural_network_main(data="local", type =None):
 
 
 def baseline_model_main():    
-    df_path = r'C:\projects\deep_learning\project2\data\raw\train.csv'
+    df_path = os.path.join('data', 'raw', 'train.csv')
     X, y, y_label = load_and_preprocess_numerical_data(df_path)
 
     # Convert X and y into PyTorch tensors
@@ -295,6 +292,6 @@ def baseline_model_main():
         print(f'{model_name} cross-validation accuracy: {accuracy * 100:.2f}%')
 
 if __name__ == "__main__":
-    #baseline_model_main()
-    neural_network_main(data="local", type ="numerical_and_textual")  # data="local", type ="numerical_and_textual"  data="kaggle"  data="local", type ="numerical"  data="local", type ="textual"
+    baseline_model_main()
+    #neural_network_main(data="local", type ="numerical_and_textual")  # data="local", type ="numerical_and_textual"  data="kaggle"  data="local", type ="numerical"  data="local", type ="textual"
     #neural_network_tuning_main()
